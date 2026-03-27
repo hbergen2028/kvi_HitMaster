@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Now — Submit a PO | HitMaster Graphics</title>
+  <meta name="description" content="Submit a Purchase Order to HitMaster Graphics. Registered broker partners can place orders directly through this portal." />
+  <link rel="icon" type="image/svg+xml" href="HitMaster_icon.svg" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-inner">
+      <div class="top-bar-items">
+        <span>📍 1706 West Fig Street, Tampa, FL 33606</span>
+        <span>|</span><a href="tel:+18132500555">📞 (813) 250-0555</a>
+      </div>
+      <div class="top-bar-items">
+        <a href="broker-registration.html">Become a Broker</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo"><img src="HitMaster_logo.svg" alt="HitMaster Graphics" /></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">Services</a>
+          <div class="dropdown-menu">
+            <a href="services.html#screen-printing" class="dropdown-item">🖨️ Screen Printing</a>
+            <a href="services.html#embroidery"       class="dropdown-item">🪡 Embroidery</a>
+            <a href="services.html#dtg"              class="dropdown-item">👕 Direct-to-Garment</a>
+            <a href="services.html#fulfillment"      class="dropdown-item">📦 Fulfillment</a>
+          </div>
+        </div>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">Brokers</a>
+          <div class="dropdown-menu">
+            <a href="broker-registration.html" class="dropdown-item">📋 Broker Registration</a>
+            <a href="broker-resources.html"    class="dropdown-item">📁 Broker Resources</a>
+          </div>
+        </div>
+        <a href="about.html"   class="nav-link">About</a>
+        <a href="faqs.html"    class="nav-link">FAQs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="quote.html" class="btn btn-outline btn-sm">Request a Quote</a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Order Now</span></div>
+    <h1>Submit a Purchase Order</h1>
+    <p>Registered broker partners can submit POs directly. If you don't have an account yet, <a href="broker-registration.html" style="color:var(--green);">register here first</a>.</p>
+  </div>
+</section>
+
+<!-- Workflow Stub Banner -->
+<div style="background:#FFFBEB;border-bottom:2px dashed var(--warning);padding:14px 0;">
+  <div class="container">
+    <div class="alert alert-warning" style="margin:0;">
+      <span>🔧</span>
+      <span><strong>PO Workflow — Phase 2:</strong> This page will launch a fully automated Purchase Order workflow. When activated, it will validate broker accounts, pull pricing, generate PO numbers, and route to production automatically.</span>
+    </div>
+  </div>
+</div>
+
+<section class="section bg-white">
+  <div class="container" style="max-width:900px;">
+
+    <!-- Two paths -->
+    <div class="grid-2" style="gap:24px;margin-bottom:40px;">
+      <div class="card" style="border:2px solid var(--blue);text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📋</div>
+        <h3 style="margin-bottom:8px;">Submit PO Form</h3>
+        <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Fill in the online form below. Best for straightforward, single-decoration orders.</p>
+        <a href="#po-form" class="btn btn-primary btn-full">Use PO Form →</a>
+      </div>
+      <div class="card card-flat" style="text-align:center;">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📎</div>
+        <h3 style="margin-bottom:8px;">Upload Your PO</h3>
+        <p style="font-size:.88rem;color:var(--gray-500);margin-bottom:16px;">Already have a PO document? Upload your PDF or Word file and we'll process it directly.</p>
+        <a href="#upload-po" class="btn btn-outline btn-full">Upload PO →</a>
+      </div>
+    </div>
+
+    <!-- PO Form -->
+    <div id="po-form" class="card">
+      <h3 style="margin-bottom:4px;">Purchase Order Form</h3>
+      <p style="color:var(--gray-500);font-size:.88rem;margin-bottom:28px;">Complete all required fields. A PO number will be assigned and emailed to you upon confirmation.</p>
+
+      <!-- Broker Auth stub -->
+      <div class="workflow-stub" style="margin-bottom:32px;">
+        <span class="badge badge-navy">Phase 2 — Workflow Stub</span>
+        <div class="workflow-stub-icon">🔐</div>
+        <h3>Broker Authentication</h3>
+        <p>In Phase 2, this section will verify your broker account credentials, pull your negotiated pricing tier, and pre-fill your billing information automatically.</p>
+      </div>
+
+      <!-- Broker info (manual for now) -->
+      <h4 style="margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--gray-300);">Broker / Company Information</h4>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Company Name <span class="req">*</span></label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Broker Account # (if known)</label>
+          <input type="text" class="form-control" placeholder="HMG-XXXXX" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Contact Name <span class="req">*</span></label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email <span class="req">*</span></label>
+          <input type="email" class="form-control" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Your PO Number <span class="req">*</span></label>
+          <input type="text" class="form-control" placeholder="Your internal PO #" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-control" />
+        </div>
+      </div>
+
+      <h4 style="margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--gray-300);margin-top:16px;">Order Details</h4>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Decoration Type <span class="req">*</span></label>
+          <select class="form-control form-select" required>
+            <option value="">Select...</option>
+            <option>Screen Printing</option>
+            <option>Embroidery</option>
+            <option>DTG</option>
+            <option>Mixed Decoration</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Total Quantity <span class="req">*</span></label>
+          <input type="number" class="form-control" min="1" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Garment / Item Description <span class="req">*</span></label>
+          <input type="text" class="form-control" placeholder="e.g. Gildan G500 T-Shirt — Assorted sizes" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Garment Color(s)</label>
+          <input type="text" class="form-control" placeholder="e.g. Black, White, Navy" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Required In-Hands Date <span class="req">*</span></label>
+          <input type="date" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Turnaround</label>
+          <select class="form-control form-select">
+            <option>Standard (7–10 business days)</option>
+            <option>Rush (+25%)</option>
+            <option>Super Rush (+50%)</option>
+          </select>
+        </div>
+      </div>
+
+      <h4 style="margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--gray-300);margin-top:16px;">Ship-To Information</h4>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Shipping Method</label>
+          <select class="form-control form-select">
+            <option>Ship to my address</option>
+            <option>Blind ship to end client</option>
+            <option>Multiple destinations</option>
+            <option>Customer pick-up (Tampa)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Ship-To Company Name</label>
+          <input type="text" class="form-control" placeholder="Leave blank if same as above" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Shipping Address <span class="req">*</span></label>
+        <input type="text" class="form-control" placeholder="Street address, City, State, ZIP" required />
+      </div>
+
+      <h4 style="margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--gray-300);margin-top:16px;">Artwork &amp; Payment</h4>
+      <div class="form-group">
+        <label class="form-label">Art Files</label>
+        <input type="file" class="form-control" multiple accept=".ai,.eps,.pdf,.png,.jpg,.psd" />
+        <p class="form-hint">Accepted: AI, EPS, PDF, PNG (300+ DPI), JPG, PSD. Max 25MB per file.</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Art / Production Notes</label>
+        <textarea class="form-control" placeholder="PMS colors, placement specs, special instructions..."></textarea>
+      </div>
+
+      <!-- Payment Stub -->
+      <div class="workflow-stub">
+        <span class="badge badge-navy">Phase 2 — Workflow Stub</span>
+        <div class="workflow-stub-icon">💳</div>
+        <h3>Payment Processing</h3>
+        <p>Phase 2 will integrate payment collection (credit card, ACH, Net-30 terms) directly into the PO workflow. Terms are assigned based on your broker credit account status.</p>
+      </div>
+
+      <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;margin-top:20px;">
+        <input type="checkbox" id="po-terms" style="margin-top:3px;flex-shrink:0;" required />
+        <label for="po-terms" style="font-size:.88rem;">I confirm this PO is accurate and I agree to HitMaster's <a href="#">Terms &amp; Conditions</a>. I understand production begins after art approval.</label>
+      </div>
+      <div style="display:flex;justify-content:flex-end;margin-top:16px;">
+        <button class="btn btn-green btn-lg">Submit Purchase Order ✓</button>
+      </div>
+    </div>
+
+    <!-- Upload PO section -->
+    <div id="upload-po" class="card" style="margin-top:32px;">
+      <h3 style="margin-bottom:8px;">Upload Existing PO Document</h3>
+      <p style="color:var(--gray-500);font-size:.88rem;margin-bottom:24px;">Already have a formatted PO? Upload it here along with your art files and we'll process it within 1 business day.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Your Company Name <span class="req">*</span></label>
+          <input type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Your Email <span class="req">*</span></label>
+          <input type="email" class="form-control" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">PO Document <span class="req">*</span></label>
+        <input type="file" class="form-control" accept=".pdf,.doc,.docx,.xls,.xlsx" />
+        <p class="form-hint">PDF, Word, or Excel format. Include item descriptions, quantities, ship-to address, and art reference.</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Artwork Files</label>
+        <input type="file" class="form-control" multiple />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Additional Notes</label>
+        <textarea class="form-control" placeholder="Anything we should know..."></textarea>
+      </div>
+      <div style="display:flex;justify-content:flex-end;margin-top:8px;">
+        <button class="btn btn-primary">Upload &amp; Submit →</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="HitMaster_logo.svg" alt="HitMaster Graphics" class="footer-logo" />
+        <p>Wholesale contract printing since 2008. Tampa, FL.</p>
+        <div class="social-links">
+          <a href="#" class="social-link fb">f</a>
+          <a href="#" class="social-link ig">📷</a>
+          <a href="#" class="social-link li">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="services.html#screen-printing">Screen Printing</a>
+          <a href="services.html#embroidery">Embroidery</a>
+          <a href="services.html#dtg">Direct-to-Garment</a>
+          <a href="services.html#fulfillment">Fulfillment</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <div class="footer-links">
+          <a href="pricing.html">Pricing</a>
+          <a href="quote.html">Request a Quote</a>
+          <a href="broker-registration.html">Broker Registration</a>
+          <a href="faqs.html">FAQs</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact">
+          <div class="footer-contact-item"><span class="icon">📍</span><span>1706 West Fig St, Tampa FL 33606</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><a href="tel:+18132500555">(813) 250-0555</a></div>
+          <div class="footer-contact-item"><span class="icon">✉️</span><a href="mailto:sales@hitmastergraphics.com">sales@hitmastergraphics.com</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 HitMaster Graphics. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
